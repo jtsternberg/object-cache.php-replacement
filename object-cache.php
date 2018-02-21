@@ -11,6 +11,9 @@ if ( class_exists( 'Redis' ) && isset( $GLOBALS['redis_server'] ) ) {
  * If we can't use the object-cache, we need some trickery
  * for WP to believe we aren't actually using an object-cache
  * (which it assumes since we have this file)
+ *
+ * As of https://core.trac.wordpress.org/changeset/42723, this
+ * "else" will no longer be needed.
  */
 else {
 
